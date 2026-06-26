@@ -83,6 +83,12 @@ Most "review my app" prompts are flattery machines — they pattern-match a fram
 
 > 💡 **Tip:** Run TRAP against an assistant that has genuine, full read access to the repository. The audit is only as good as the code it can actually see — that's why Rule 0 exists.
 
+## 👀 See it in action
+
+Curious what TRAP actually hands back? **[Read a full example audit →](docs/EXAMPLE-AUDIT.md)** — an illustrative run against a fictional Next.js + Supabase + Stripe app, showing every section of the output: the letter grade, the deployment blockers, the findings table, exact diffs, the remediation roadmap, and the final verdict.
+
+It demonstrates the rules that make TRAP different — `NOT PRESENT` treated as a finding, an RLS policy that *exists but isn't proven* flagged as a Critical, and a Verification Appendix you can re-run yourself.
+
 ## 🧭 How it works: the 11 phases
 
 TRAP forces a build-then-break sequence. It won't review controls until it has modeled the system, and it won't stop at the happy path.
@@ -141,6 +147,8 @@ TRAP/
 ├── TRAP.md                ← the canonical prompt (latest)
 ├── prompts/
 │   └── TRAP-v2.0.0.md     ← versioned snapshots
+├── docs/
+│   └── EXAMPLE-AUDIT.md   ← what a TRAP run looks like
 ├── CHANGELOG.md           ← what changed between versions
 ├── CONTRIBUTING.md        ← how to propose improvements
 ├── LICENSE                ← MIT
