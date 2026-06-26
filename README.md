@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🪤 TRAP
+<img src="docs/assets/social-preview.png" alt="TRAP — True Readiness Audit Prompt. Don't ship hope. Ship evidence." width="760" />
 
-### True Readiness Audit Prompt
+# 🪤 TRAP — True Readiness Audit Prompt
 
 **An adversarial, evidence-first production-readiness audit you run on your own codebase — before someone else runs it for you.**
 

@@ -1,0 +1,38 @@
+<svg width="680" height="380" viewBox="0 0 680 380" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>TRAP launch graphic</title>
+<desc>Promotional poster for TRAP, the True Readiness Audit Prompt. Tagline: don't ship hope, ship evidence. Shows three verdict labels: verified, not present, unknown. Link: github.com/bikr/TRAP.</desc>
+<style>
+.fg{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+</style>
+<rect x="0" y="0" width="680" height="380" rx="18" fill="#0F1620"/>
+<rect x="0.5" y="0.5" width="679" height="379" rx="18" fill="none" stroke="#40DCA5" stroke-opacity="0.25" stroke-width="1"/>
+
+<circle cx="585" cy="118" r="66" fill="none" stroke="#40DCA5" stroke-opacity="0.18" stroke-width="1.5"/>
+<circle cx="585" cy="118" r="42" fill="none" stroke="#40DCA5" stroke-opacity="0.30" stroke-width="1.5"/>
+<circle cx="585" cy="118" r="6" fill="#40DCA5" fill-opacity="0.55"/>
+<line x1="585" y1="40" x2="585" y2="196" stroke="#40DCA5" stroke-opacity="0.15" stroke-width="1"/>
+<line x1="507" y1="118" x2="663" y2="118" stroke="#40DCA5" stroke-opacity="0.15" stroke-width="1"/>
+
+<text x="40" y="52" class="fg" font-size="13" letter-spacing="2" fill="#8A97A6">v2.0.0  ·  MIT  ·  FREE</text>
+
+<text x="38" y="150" class="fg" font-size="92" font-weight="700" fill="#40DCA5" letter-spacing="2">TRAP</text>
+<text x="42" y="184" class="fg" font-size="21" font-weight="500" fill="#F2F5F7">True Readiness Audit Prompt</text>
+
+<line x1="42" y1="212" x2="300" y2="212" stroke="#2A3340" stroke-width="1"/>
+
+<text x="40" y="258" class="fg" font-size="27" font-weight="600" fill="#F2F5F7">Don't ship hope. Ship <tspan fill="#40DCA5">evidence.</tspan></text>
+
+<g class="fg" font-size="13" font-weight="600">
+<rect x="40" y="288" width="118" height="34" rx="17" fill="none" stroke="#40DCA5" stroke-width="1.3"/>
+<text x="60" y="310" fill="#40DCA5">✓ VERIFIED</text>
+
+<rect x="170" y="288" width="150" height="34" rx="17" fill="none" stroke="#FF6B6B" stroke-width="1.3"/>
+<text x="189" y="310" fill="#FF6B6B">✗ NOT PRESENT</text>
+
+<rect x="332" y="288" width="124" height="34" rx="17" fill="none" stroke="#FFC24B" stroke-width="1.3"/>
+<text x="352" y="310" fill="#FFC24B">? UNKNOWN</text>
+</g>
+
+<text x="40" y="360" class="fg" font-size="15" font-weight="600" fill="#40DCA5">github.com/bikr/TRAP</text>
+<text x="640" y="360" text-anchor="end" class="fg" font-size="13" fill="#8A97A6">an adversarial production-readiness audit</text>
+</svg>
