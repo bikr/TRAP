@@ -1,0 +1,20 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# Local notes / audit outputs (don't commit real audit reports — they leak architecture)
+/audits/
+*.audit.md
+scratch/
+TODO.local.md
+
+# Env / secrets (TRAP would flag you for committing these)
+.env
+.env.*
+*.pem
+*.key
