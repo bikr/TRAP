@@ -192,6 +192,4 @@ If TRAP caught something before it cost you a 2 a.m. incident, a leaked key rota
 
 **Don't ship hope. Ship evidence.**
 
-⭐ If TRAP saved you a bad deploy, star the repo so the next person finds it.
-
 </div>
