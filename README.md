@@ -49,6 +49,8 @@ If it can't point at the code, it doesn't get to call you secure.
 
 Most "review my app" prompts are flattery machines — they pattern-match a framework's typical structure and hand back a reassuring ✅. TRAP is engineered specifically to **resist** that.
 
+Others go the opposite way: they're **personality kits**. They hand the model a name, a job title, a backstory, and a bedside manner, so the review *sounds* like it came from a grizzled security engineer. It's a genuinely fun trick and it makes the output feel warm, human, and authoritative — but a persona doesn't read your code. How an agent *talks to you* has nothing to do with whether it actually found the IDOR. Worse, a friendly, confident voice wrapped around an unverified finding is more dangerous than silence: it *feels* like diligence while delivering none. TRAP spends its words on method, not manner — what to check, what counts as proof, and what to admit when the proof isn't there.
+
 - 🚫 **Access Gate (Rule 0).** No repo access? It refuses to audit and tells you so — instead of hallucinating a report from vibes.
 - 🔬 **Asserted ≠ Verified.** An access-control policy that *exists* but isn't proven by a real cross-tenant test is reported as **NOT PRESENT**. Enabling a guard you never tested is treated as *worse* than not having one.
 - 🎯 **Coverage rule.** Finite sets (routes, env vars, migrations, upload handlers) get enumerated and audited individually — no implying full coverage from a sample.
