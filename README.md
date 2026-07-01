@@ -6,7 +6,7 @@
 
 **An adversarial, evidence-first production-readiness audit you run on your own codebase — before someone else runs it for you.**
 
-[![Version](https://img.shields.io/badge/version-2.0.0-40DCA5?style=for-the-badge)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.1.0-40DCA5?style=for-the-badge)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Prompt](https://img.shields.io/badge/type-LLM%20prompt-8A2BE2?style=for-the-badge)](TRAP.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-success?style=for-the-badge)](CONTRIBUTING.md)
@@ -97,7 +97,7 @@ TRAP forces a build-then-break sequence. It won't review controls until it has m
 | :-: | :-- | :-- |
 | **1** | 🗺️ **Understand the System** | Maps every component, provider, trust boundary, and **data residency** region — with a text architecture diagram. No review until the model is grounded in files. |
 | **2** | 🎯 **Threat Model** | Names *this app's* critical assets, threat actors, and attack surfaces. Every later finding ties back to a threat here. |
-| **3** | 🛡️ **Security Review** | OWASP Top 10 + modern SaaS: auth, authz/IDOR, DB/RLS, API, frontend XSS, secrets split, uploads, **AI security**, payments, rate limiting, bot protection, infra, DevOps. |
+| **3** | 🛡️ **Security Review** | OWASP Top 10 + modern SaaS: auth, authz/IDOR, DB/RLS, API, injection (source→sink taint trace), frontend XSS, secrets split, **cryptography**, uploads, **AI security**, payments, rate limiting, bot protection, infra, DevOps. |
 | **4** | ⚖️ **Privacy & Compliance** | GDPR/CCPA, data inventory + residency, DPAs for processor PII, retention/erasure — all flagged for counsel, never asserted as "compliant." |
 | **5** | 💥 **Failure Testing** | The unhappy paths: tampered JWTs, lockouts, enumeration leaks, path traversal, race conditions, replay. Maps each classic test to its magic-link/OAuth equivalent. |
 | **6** | 🗡️ **Attack Mode** | Becomes the adversary. Every attack scored on Likelihood · Impact · Difficulty · **Detection** · Mitigation. |

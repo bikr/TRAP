@@ -4,6 +4,21 @@ All notable changes to the TRAP prompt are documented here. The prompt follows
 [Semantic Versioning](https://semver.org/): wording changes that meaningfully
 alter audit behavior bump the version.
 
+## [2.1.0] — 2026-06-30
+
+Sharper injection and cryptography coverage. No breaking changes to the
+methodology or output contract — every 2.0.0 verdict still holds.
+
+### Added
+- **Cryptography control (Phase 3).** Verifies algorithm *use*, not just presence: slow salted KDFs for passwords (not MD5/SHA), authenticated modes with unique nonces (not ECB/static IVs), constant-time secret comparison, and CSPRNG-sourced tokens.
+- **Injection — trace it, don't spot it (Phase 3).** Requires tracing at least one concrete untrusted-input path from source to sink per injection class, mirroring the existing cross-tenant authorization trace. A library being "safe" is not a trace.
+
+### Changed
+- **Backend area** now calls out stack-specific dangerous sinks (`eval`, template injection, unsafe deserializers, ORM raw escapes, prototype pollution) and requires validation at *every* trust boundary — webhooks, queues, file contents, inter-service calls — not just the browser edge.
+- **Remediation Loop** now requires keeping a passing exploit test as a committed regression test, so fixed vulnerabilities cannot silently return.
+
+[2.1.0]: https://github.com/bikr/TRAP/releases/tag/v2.1.0
+
 ## [2.0.0] — 2026-06-26
 
 First public release.
