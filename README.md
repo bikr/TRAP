@@ -6,7 +6,7 @@
 
 **An adversarial, evidence-first production-readiness audit you run on your own codebase — before someone else runs it for you.**
 
-[![Version](https://img.shields.io/badge/version-2.1.0-40DCA5?style=for-the-badge)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.1.1-40DCA5?style=for-the-badge)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Prompt](https://img.shields.io/badge/type-LLM%20prompt-8A2BE2?style=for-the-badge)](TRAP.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-success?style=for-the-badge)](CONTRIBUTING.md)

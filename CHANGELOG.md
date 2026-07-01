@@ -4,6 +4,13 @@ All notable changes to the TRAP prompt are documented here. The prompt follows
 [Semantic Versioning](https://semver.org/): wording changes that meaningfully
 alter audit behavior bump the version.
 
+## [2.1.1] — 2026-07-01
+
+### Added
+- **Regex denial of service (ReDoS) check (Phase 3).** Enumerates regexes that run against untrusted input and flags catastrophic backtracking (nested/overlapping quantifiers, unbounded alternation), with the single-threaded-runtime blast radius called out and a concrete fix required (length cap, anchoring, or a linear-time engine).
+
+[2.1.1]: https://github.com/bikr/TRAP/releases/tag/v2.1.1
+
 ## [2.1.0] — 2026-06-30
 
 Sharper injection and cryptography coverage. No breaking changes to the
